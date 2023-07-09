@@ -17,7 +17,7 @@ function ImageContainer({ url, title }) {
 
   return (
     <Flex w={'100%'} borderRadius={"5px"} shadow={"1px 1px 5px lightblue"}>
-      <Box p={"-5px"}>
+      <div >
         {favourite ? (
           <SvgHeartFilled
             onClick={() => setFavourite(false)}
@@ -32,6 +32,7 @@ function ImageContainer({ url, title }) {
             onClick={() => setFavourite(true)}
             position={"absolute"}
             zIndex={"1"}
+            // zindex={"1"}
             padding={"5px"}
             cursor={"pointer"}
             // style={{ position: "absolute", padding: "5px", cursor:"pointer" }}
@@ -46,7 +47,7 @@ function ImageContainer({ url, title }) {
           src={url}
           alt="image"
         />
-      </Box>
+      </div>
       <Spacer />
       <Box w={"30vw"} h={"inherit"}>
         <Heading>
