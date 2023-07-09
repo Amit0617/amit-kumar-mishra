@@ -45,7 +45,7 @@ function VideoContainer({ url, title }) {
             width: "60vw",
             height: "35vw",
           }}
-          controls={true}
+          controls={false}
           autoPlay={true}
           muted={true}
           src={url}

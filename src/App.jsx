@@ -8,11 +8,11 @@ function App() {
 
   return (
     <VStack spacing={"18"}>
-      <ImageContainer url={"./g5Xy2uRb.jpg"} title={'test test test test test'} />
-      <ImageContainer url={"./uzmnWy7.jpg"} title={'This is image title'}/>
+      <ImageContainer url={"./g5Xy2uRb.jpg"} title={'test test test'} />
+      <ImageContainer url={"./uzmnWy7.jpg"} title={'This is image'}/>
       <VideoContainer
         url={"./QYCBUl3.mp4"}
-        title={"This is a title of Video"}
+        title={"This is a Video"}
       />
       <ImageContainer url={"./2cXi8f8.gif"} title={"this is gif"} />
     </VStack>
