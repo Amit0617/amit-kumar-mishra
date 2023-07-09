@@ -8,7 +8,15 @@ function VideoContainer({ url, title }) {
   const [favourite, setFavourite] = useState(false);
 
   return (
-    <div style={{width: '100%', borderRadius:'5px', boxShadow:"1px 1px 5px lightblue", height:"auto", display: 'flex'}} >
+    <div
+      style={{
+        width: "100%",
+        borderRadius: "5px",
+        boxShadow: "1px 1px 5px lightblue",
+        height: "auto",
+        display: "flex",
+      }}
+    >
       <div>
         {favourite ? (
           <SvgHeartFilled
@@ -44,7 +52,7 @@ function VideoContainer({ url, title }) {
             width: "60vw",
             height: "35vw",
           }}
-          controls
+          // controls
           autoPlay
           muted
         >
