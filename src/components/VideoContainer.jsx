@@ -14,8 +14,7 @@ function VideoContainer({ url, title }) {
           <SvgHeartFilled
             onClick={() => setFavourite(false)}
             position={"absolute"}
-            paddingTop={"12px"}
-            paddingLeft={"5px"}
+            padding={"5px"}
             cursor={"pointer"}
             // style={{
             //   position: "absolute",
@@ -27,8 +26,7 @@ function VideoContainer({ url, title }) {
           <SvgHeart
             onClick={() => setFavourite(true)}
             position={"absolute"}
-            paddingTop={"12px"}
-            paddingLeft={"5px"}
+            padding={"5px"}
             cursor={"pointer"}
             // style={{
             //   position: "absolute",
