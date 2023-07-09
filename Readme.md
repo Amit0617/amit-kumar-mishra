@@ -1,5 +1,8 @@
 # Media container
-All of the content of different size are playing into same size without any crop.
+All of the content of different size are playing into same size. 
+No crop.
+No controls.
+favourite button.
 
 ### Setup
 ```
