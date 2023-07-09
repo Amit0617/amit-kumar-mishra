@@ -39,6 +39,8 @@ function ImageContainer({ url, title }) {
         )}
         <Image
           position={"relative"}
+          paddingLeft={"5px"}
+          paddingTop={"5px"}
           width={"60vw"}
           height={"35vw"}
           src={url}

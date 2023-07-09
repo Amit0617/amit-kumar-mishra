@@ -8,8 +8,8 @@ function VideoContainer({ url, title }) {
   const [favourite, setFavourite] = useState(false);
 
   return (
-    <Flex w={'100%'} borderRadius={"5px"} shadow={"1px 1px 5px lightblue"} h={"auto"}>
-      <Box>
+    <div style={{width: '100%', borderRadius:'5px', boxShadow:"1px 1px 5px lightblue", height:"auto", display: 'flex'}} >
+      <div>
         {favourite ? (
           <SvgHeartFilled
             onClick={() => setFavourite(false)}
@@ -39,24 +39,27 @@ function VideoContainer({ url, title }) {
         )}
         <video
           style={{
+            paddingLeft: "5px",
             position: "relative",
             borderRadius: "5px",
             zIndex: "-1",
             width: "60vw",
             height: "35vw",
           }}
-          controls={false}
-          autoPlay={true}
-          muted={true}
-          src={url}
-        />
-      </Box>
+          controls
+          autoPlay
+          muted
+        >
+          <source src={url} type="video/mp4" />
+          Your browser does not support videos
+        </video>
+      </div>
 
       <Spacer />
-      <Box w={"30vw"} h={"initial"}>
+      <Box w={"30vw"}>
         <Heading fontSize={"2xl"}>{title}</Heading>
       </Box>
-    </Flex>
+    </div>
   );
 }
 
