@@ -46,6 +46,7 @@ function ImageContainer({ url, title }) {
           height={"35vw"}
           src={url}
           alt="image"
+        
         />
       </div>
       <Spacer />

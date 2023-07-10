@@ -54,7 +54,7 @@ function VideoContainer({ url, title }) {
             width: "60vw",
             height: "35vw",
           }}
-          controls
+          // controls
           loop
           autoPlay
           muted
