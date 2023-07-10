@@ -24,6 +24,7 @@ function VideoContainer({ url, title }) {
             position={"absolute"}
             padding={"5px"}
             cursor={"pointer"}
+            zIndex={"2"}
             // style={{
             //   position: "absolute",
             //   paddingTop: "12px",
@@ -36,6 +37,7 @@ function VideoContainer({ url, title }) {
             position={"absolute"}
             padding={"5px"}
             cursor={"pointer"}
+            zIndex={"2"}
             // style={{
             //   position: "absolute",
             //   paddingTop: "12px",
@@ -47,16 +49,18 @@ function VideoContainer({ url, title }) {
           style={{
             paddingLeft: "5px",
             position: "relative",
-            borderRadius: "5px",
-            zIndex: "-1",
+            // borderRadius: "5px",
+            zIndex: "0",
             width: "60vw",
             height: "35vw",
           }}
-          // controls
+          controls
+          loop
           autoPlay
           muted
+          // src={url}
         >
-          <source src={url} type="video/mp4" />
+          <source src={url} />
           Your browser does not support videos
         </video>
       </div>
